@@ -1,0 +1,4 @@
+TravisTest
+==========
+
+Travis CI のテストするためのリポジトリ
