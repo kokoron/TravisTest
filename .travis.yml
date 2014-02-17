@@ -5,10 +5,8 @@ before_install:
     - gem install ios_ci
     - gem install cocoapods
     - brew install ios-sim
-
 script:
   	- make clean test
-
 notifications:
   email:
     - korotan1@mac.com
