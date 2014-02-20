@@ -1,12 +1,9 @@
 language: objective-c
+rvm: 1.9.3
 
 before_install:
-    - gem update --system
-    - gem install ios_ci
-    - gem install cocoapods
-    - brew install ios-sim
+    - gem install cocoapods -r
+	- pod setup
+
 script:
   	- make clean test
-notifications:
-  email:
-    - korotan1@mac.com
