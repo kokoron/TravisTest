@@ -2,8 +2,8 @@ language: objective-c
 rvm: 1.9.3
 
 before_install:
-    - gem install cocoapods -r
-	- pod setup
+- gem install cocoapods -r
+- pod setup
 
 script:
-  	- make clean test
+- make clean test
