@@ -5,7 +5,7 @@ require "rake/clean"
 APP_NAME = "TravisTest"
 SDK = "iphoneos"
 WORKSPACE_DIR = File.expand_path("#{APP_NAME}.xcworkspace")
-SCHEME = "Release"
+SCHEME = "TravisTest"
 CONFIGURATION = "Release"
 INFO_PLIST = File.expand_path("#{APP_NAME}/#{APP_NAME}-Info.plist")
  
