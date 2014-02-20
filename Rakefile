@@ -70,3 +70,15 @@ task :build do |t|
   settings = join_option(options: settings, prefix: "", seperator: "=")
   sh "xcodebuild #{options} #{settings} clean build | xcpretty -c; exit ${PIPESTATUS[0]}"
 end
+
+
+def join_option(params = {})
+  options = params[:options]
+  prefix = params[:prefix]
+  seperator = params[:seperator]
+  _options = options.map { |k, v| %(#{prefix}#{k}#{seperator}"#{v}") }
+  _options = _options.join(" ")
+end
+
+desc "Print the current version"
+task :version => 'version:current'
