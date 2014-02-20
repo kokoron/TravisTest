@@ -4,6 +4,8 @@ cache:
   bundler: true
   directories:
   - Pods
+before_script:
+- gem install xcpretty
 script:
 - rake test
 env:
